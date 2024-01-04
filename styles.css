@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;/*extra*/
+    padding: 10px 20px;
+    border: solid black;
+    gap: 10px; /*extra*/
+    max-height: 40px;
+    min-height: 40px;
+}
+body {
+    background-color: #024846; /*extra*/
+}
+
+li {
+    min-width: 200px;
+    max-width: 200px;
+    list-style: none;
+}
+
+li:hover {
+    border: 1px solid red
+}
+
+li:active {
+    font-family: "Lucida Sans Unicode", serif;
+}
+
+li:focus {
+    background-color: #012e01;
+}
+
+li:nth-child(odd) {
+    color: gray;
+}
+
+li::before {
+    content: ">>";
+}
+
+@media screen and  (max-width: 700px ) {
+    ul {
+        flex-direction: column;
+    }
+    
+}
